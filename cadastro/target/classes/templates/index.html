@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css" />
+    <title>Index</title>
+</head>
+<body>
+
+    <div class="headerPanel">
+        <h1>Lista de Eventos</h1>
+
+        <h3><a href="/cadastrarEvento"> Novo Evento</a> </h3>
+    </div>
+
+    <div class="row header">
+        <p><strong>Nome</strong></p>
+        <p><strong>Data</strong></p>
+        <p><strong>Local</strong></p>
+        <p><strong>Horário</strong></p>
+    </div>
+
+    <div th:each="evento : ${listaEventos}">
+        <div class="row">
+            <div class="eventoCard">
+                <p><span th:text="${evento.nome}"><strong>Nome</strong>: </span></p>
+                <p><span th:text="${evento.data}"></span></p>
+                <p><span th:text="${evento.horario}"></span></p>
+                <p><span th:text="${evento.local}"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

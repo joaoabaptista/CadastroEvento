@@ -1,0 +1,15 @@
+.headerPanel{
+background-color: blue;
+}
+
+.eventoCard{
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
