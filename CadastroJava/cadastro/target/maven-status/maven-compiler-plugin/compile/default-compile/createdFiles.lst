@@ -1,0 +1,5 @@
+com/cadastro/cadastro/CadastroApplication.class
+com/cadastro/cadastro/controller/EventoController.class
+com/cadastro/cadastro/repository/EventoRepository.class
+com/cadastro/cadastro/model/Evento.class
+com/cadastro/cadastro/ServletInitializer.class
